@@ -14,4 +14,12 @@ public class Student {
     public String toString(){
         return this.name+Integer.toString(studentId);
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String new_name){
+        this.name=new_name;
+    }
 }
