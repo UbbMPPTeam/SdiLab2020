@@ -4,8 +4,6 @@ package userInterface;
 import Controller.Controller;
 
 import java.util.Scanner;
-//import repo.*;
-//import ctrl.*;
 
 public class UI {
 
@@ -24,21 +22,29 @@ public class UI {
     public void run()
     {
         Scanner scan=new Scanner(System.in);
-        int input=0;
+        int input;
         while(true)
         {
             printMenu();
             input= scan.nextInt();
             switch (input) {
                 case 1:{
-
+                    System.out.println("input student name:");
+                    String name=scan.nextLine();
+                    //controller.validate()
+                    controller.addStudent(name);
                 }
                 case 2:{
                     System.out.println(controller.PrintStudents());
                 }
                 case 0:return;
             }
+           /*if(input==1) {
+               System.out.println("input student name:");
+               String name = scan.nextLine();
+               //controller.validate()
+               controller.addStudent(name);*/
+           }
         }
     }
 
-}

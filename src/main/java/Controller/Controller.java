@@ -5,8 +5,8 @@ import repository.StudentRepository;
 public class Controller {
     private StudentRepository studentRepository;
 
-    public Controller(){
-        studentRepository=new StudentRepository();
+    public Controller(StudentRepository studentRepository){
+        this.studentRepository=studentRepository;
     }
     public void addStudent(String name){
         //exceptii bla bla
