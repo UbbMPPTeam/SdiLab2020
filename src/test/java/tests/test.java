@@ -33,7 +33,7 @@ public class test {
     }
 
     @Test
-    public void testToString throws Exception {
+    public void testToString() throws Exception {
         String expected=name+'1';
         assertEquals(expected,student.toString());
     }
