@@ -12,7 +12,7 @@ public class Student {
     }
     @Override
     public String toString(){
-        return this.name+Integer.toString(studentId);
+        return this.name+" with id:"+Integer.toString(studentId);
     }
 
     public String getName() {

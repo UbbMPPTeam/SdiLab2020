@@ -22,6 +22,7 @@ public class UI {
     public void run()
     {
         Scanner scan=new Scanner(System.in);
+        Scanner scan2=new Scanner(System.in);
         int input;
         while(true)
         {
@@ -30,20 +31,21 @@ public class UI {
             switch (input) {
                 case 1:{
                     System.out.println("input student name:");
-                    String name=scan.nextLine();
+                    String name=scan2.nextLine();
                     //controller.validate()
                     controller.addStudent(name);
+                    break;
                 }
                 case 2:{
                     System.out.println(controller.PrintStudents());
+                    break;
                 }
                 case 0:return;
+                default:{
+                    System.out.println(" '"+input+"' "+"not a valid option");
+                    break;
+                }
             }
-           /*if(input==1) {
-               System.out.println("input student name:");
-               String name = scan.nextLine();
-               //controller.validate()
-               controller.addStudent(name);*/
            }
         }
     }
