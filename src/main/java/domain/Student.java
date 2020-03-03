@@ -22,4 +22,12 @@ public class Student {
     public void setName(String new_name){
         this.name=new_name;
     }
+
+    public int getId(){
+        return studentId;
+    }
+
+    public void setId(int newId){
+        studentId=newId;
+    }
 }
